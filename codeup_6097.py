@@ -12,7 +12,7 @@ for i in range(n):
         elif d==1:
             a[y-1][x-1+j]=1
 
-for i in range(h):
+for i in range(h):           
     for j in range(w):
         print(a[j][i],end=" ")
     print("")
