@@ -1,14 +1,9 @@
-a,b,c=map(int,input().split())
+import sys
 
-def plus(a,b,c):
-    n=1
-    while True:
-        n+=1
-        pro=a+(b*n)
-        sell=c*n
-        if sell>pro:
-            break
-    return n
+a,b,c=map(int,sys.stdin.readline().split())
 
-plus(a,b,c)
-print(plus(a,b,c))
+if b>=c:
+    print(-1)
+else:
+    n=a//(c-b)+1
+    print(n)
